@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import { AppShell } from "./components/shell";
-import { SWRProvider } from "./components/swr/swr-provider";
 import { AnimeList } from "./components/anime/anime-list";
 import { AnimeDetails } from "./components/anime/anime-details";
 import { Toaster } from "sonner";
 import { CheckCircle2 } from "lucide-react";
+import { SWRProvider } from "./lib/swr/swr-provider";
 
 function App() {
 	return (
