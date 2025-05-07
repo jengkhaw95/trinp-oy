@@ -1,4 +1,3 @@
-import { Loader } from "lucide-react";
 import { Loading } from "../loading";
 
 type AnimeCoverProps = {

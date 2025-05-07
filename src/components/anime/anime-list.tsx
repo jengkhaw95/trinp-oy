@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useAnimeList } from "../swr/use-anime-list";
 import { Input } from "../ui/input";
 import { AnimeCover } from "./anime-cover";
 import { debounce } from "@/lib/utils";
@@ -8,6 +7,7 @@ import { NoData } from "../no-data";
 import { StarIcon, Users2Icon } from "lucide-react";
 import { Link } from "react-router";
 import { AnimePagination } from "./anime-pagination";
+import { useAnimeList } from "@/lib/swr/use-anime-list";
 
 export function AnimeList() {
 	const [search, setSearch] = useState("");

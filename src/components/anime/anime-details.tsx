@@ -1,5 +1,4 @@
 import { Link, useParams } from "react-router";
-import { useAnimeDetails } from "../swr/use-anime-details";
 import { Button } from "../ui/button";
 import { AnimeCover } from "./anime-cover";
 import { Loading } from "../loading";
@@ -18,6 +17,7 @@ import {
 	StarsIcon,
 	Users2Icon,
 } from "lucide-react";
+import { useAnimeDetails } from "@/lib/swr/use-anime-details";
 
 export function AnimeDetails() {
 	const { id } = useParams<{ id: string }>();
