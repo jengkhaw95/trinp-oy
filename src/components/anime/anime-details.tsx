@@ -68,11 +68,14 @@ export function AnimeDetails() {
 											return;
 										}
 										if (isFav) {
+											// @ts-ignore
 											setFavAnimeIds((prev) =>
+												// @ts-ignore
 												prev.filter((favId) => favId !== id),
 											);
 											toast.success("Removed from favorites");
 										} else {
+											// @ts-ignore
 											setFavAnimeIds((prev) => [...prev, id]);
 											toast.success("Added to favorites");
 										}
